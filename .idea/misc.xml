@@ -4,13 +4,15 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/ls-java-core/pom.xml" />
+        <option value="$PROJECT_DIR$/ls-aqa-school/ls-java-core/pom.xml" />
+        <option value="$PROJECT_DIR$/ls-aqa-school/addressbook-web-tests/pom.xml" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/pom.xml" />
+        <option value="$PROJECT_DIR$/ls-java-core/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
