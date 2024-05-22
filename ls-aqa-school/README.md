@@ -1,1 +1,0 @@
-https://confluence.sportsapi.ru/pages/viewpage.action?pageId=269358753
