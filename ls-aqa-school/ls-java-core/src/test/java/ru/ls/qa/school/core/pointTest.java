@@ -1,3 +1,5 @@
+package ru.ls.qa.school.core;
+
 import org.junit.jupiter.api.Test;
 import ru.ls.qa.school.core.Point;
 
