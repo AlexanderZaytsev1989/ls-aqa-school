@@ -4,16 +4,12 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.Dimension;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import static com.codeborne.selenide.Selenide.open;
 
 public class ApplicationManager {
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
     private SessionHelper sessionHelper;
-    public Map<String, Object> wd;
 
     public void init() {
         Configuration.browser = "chrome";

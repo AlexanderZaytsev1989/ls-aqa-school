@@ -2,9 +2,11 @@ package ru.ls.qa.school.addressbook.appmanager;
 
 import java.util.Map;
 
-public class NavigationHelper {
+import static com.codeborne.selenide.Selectors.byLinkText;
+
+public class NavigationHelper extends HelperBase {
 
     public static void goToGroupPage() {
-        GroupHelper.returnToGroupPage();
+        click(byLinkText("groups"));
     }
 }
