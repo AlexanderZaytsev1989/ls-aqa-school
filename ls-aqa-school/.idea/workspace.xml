@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="72e0947b-aebf-4c13-8d49-48e5f7eea886" name="Changes" comment="Написал тест для проверки расстояния между точками" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2gbPwK2PUP7QQaLk2Y5f3rNDxWy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.OddTask.executor": "Run",
+    "Application.PointTask.executor": "Run",
+    "JUnit.PointTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Зайцев/AQA STUDY",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.ls.qa.school.core" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-temurin-17.0.10-3183f394aec4-87f3d08d" />
+        <option value="jdk-21.0.2-temurin-21.0.2-4caba194b151-7da56cdf" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72e0947b-aebf-4c13-8d49-48e5f7eea886" name="Changes" comment="" />
+      <created>1715963543812</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715963543812</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Remove old module addressbook and create new module addressbook">
+      <option name="closed" value="true" />
+      <created>1715964692386</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715964692386</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Добавил в README ссылку на &quot;Задания к обучающим материалам (Блоки 1-5). Зайцев Александр&quot;">
+      <option name="closed" value="true" />
+      <created>1716042140289</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716042140289</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавил в README ссылку на &quot;Задания к обучающим материалам (Блоки 1-5). Зайцев Александр&quot;">
+      <option name="closed" value="true" />
+      <created>1716046179928</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716046179928</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit 2">
+      <option name="closed" value="true" />
+      <created>1716046759575</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716046759575</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit 3">
+      <option name="closed" value="true" />
+      <created>1716133825329</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716133825329</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Добавил класс Point и метод public double distance. Задания 2.1 и 2.2">
+      <option name="closed" value="true" />
+      <created>1716185662878</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716185662878</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Добавил класс Point и метод public double distance. Задания 2.1 и 2.2">
+      <option name="closed" value="true" />
+      <created>1716186149070</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716186149070</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Добавил класс Point и метод public double distance. Задания 2.1 и 2.2">
+      <option name="closed" value="true" />
+      <created>1716189033843</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716189033843</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Добавил запускаемый класс PointTask">
+      <option name="closed" value="true" />
+      <created>1716269316572</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716269316572</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Добавил класс OddTask (Задание 2)">
+      <option name="closed" value="true" />
+      <created>1716270314081</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716270314081</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Написал тест для проверки расстояния между точками">
+      <option name="closed" value="true" />
+      <created>1716353717281</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716353717281</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="task1.2" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove old module addressbook and create new module addressbook" />
+    <MESSAGE value="Добавил в README ссылку на &quot;Задания к обучающим материалам (Блоки 1-5). Зайцев Александр&quot;" />
+    <MESSAGE value="commit 2" />
+    <MESSAGE value="commit 3" />
+    <MESSAGE value="Добавил класс Point и метод public double distance. Задания 2.1 и 2.2" />
+    <MESSAGE value="Добавил запускаемый класс PointTask" />
+    <MESSAGE value="Добавил класс OddTask (Задание 2)" />
+    <MESSAGE value="Написал тест для проверки расстояния между точками" />
+    <option name="LAST_COMMIT_MESSAGE" value="Написал тест для проверки расстояния между точками" />
+  </component>
+</project>

@@ -1,4 +1,4 @@
-package ru.ls.qa.school.core;
+package ru.ls.qa.school.addressbook;
 
 public class Main {
     public static void main(String[] args) {
