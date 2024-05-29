@@ -17,13 +17,9 @@ public class ApplicationManager {
 
     public void init() {
         Configuration.browser = "chrome";
-        wd = new HashMap<>();
         open("http://localhost/addressbook/");
         WebDriverRunner.getWebDriver().manage().window().setSize(new Dimension(1936, 1056));
-        groupHelper = new GroupHelper(wd);
-        navigationHelper = new NavigationHelper(wd);
-        sessionHelper = new SessionHelper(wd);
-        SessionHelper.Login("admin", "secret");
+        SessionHelper.login("admin", "secret");
     }
 
     public GroupHelper getGroupHelper() {
@@ -33,4 +29,6 @@ public class ApplicationManager {
     public NavigationHelper getNavigationHelper() {
         return navigationHelper;
     }
+
+    public SessionHelper getSessionHelper() { return sessionHelper; }
 }

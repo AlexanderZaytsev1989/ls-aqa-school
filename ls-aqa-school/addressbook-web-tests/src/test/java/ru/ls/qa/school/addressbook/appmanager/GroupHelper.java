@@ -8,11 +8,6 @@ import static com.codeborne.selenide.Selectors.byLinkText;
 import static com.codeborne.selenide.Selectors.byName;
 public class GroupHelper extends HelperBase {
 
-
-    public GroupHelper(Map<String, Object> wd) {
-        super(wd);
-    }
-
     public static void submitGroupForm() {
         click(byName("submit"));
     }
