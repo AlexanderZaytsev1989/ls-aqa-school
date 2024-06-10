@@ -25,6 +25,7 @@ public class GroupHelper extends HelperBase {
     public static void returnToGroupPage() {
         click(byLinkText("groups"));
     }
+    public static void initGroupModification() { click(byName("edit")); }
 
     public static void deleteSelectedGroups() {
         click(byName("delete"));
@@ -33,4 +34,6 @@ public class GroupHelper extends HelperBase {
     public static void selectGroup() {
         click(byName("selected[]"));
     }
+
+    public static void submitGroupModification() { click(byName("update")); }
 }
