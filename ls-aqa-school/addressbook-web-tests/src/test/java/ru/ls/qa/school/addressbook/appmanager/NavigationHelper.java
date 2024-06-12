@@ -9,4 +9,5 @@ public class NavigationHelper extends HelperBase {
     public static void goToGroupPage() {
         click(byLinkText("groups"));
     }
+
 }

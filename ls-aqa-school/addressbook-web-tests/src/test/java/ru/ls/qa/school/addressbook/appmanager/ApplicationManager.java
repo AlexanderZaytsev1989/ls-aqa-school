@@ -11,6 +11,8 @@ public class ApplicationManager {
     private GroupHelper groupHelper;
     private SessionHelper sessionHelper;
 
+    private ContactHelper contactHelper;
+
     public void init() {
         Configuration.browser = "chrome";
         open("http://localhost/addressbook/");
@@ -18,13 +20,13 @@ public class ApplicationManager {
         SessionHelper.login("admin", "secret");
     }
 
-    public GroupHelper getGroupHelper() {
-        return groupHelper;
-    }
+    public GroupHelper getGroupHelper() { return groupHelper; }
 
     public NavigationHelper getNavigationHelper() {
         return navigationHelper;
     }
 
     public SessionHelper getSessionHelper() { return sessionHelper; }
+
+    public ContactHelper getContactHelper() { return contactHelper; }
 }
