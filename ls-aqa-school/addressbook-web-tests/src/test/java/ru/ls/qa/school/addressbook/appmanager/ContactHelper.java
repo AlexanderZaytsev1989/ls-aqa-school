@@ -29,7 +29,6 @@ public class ContactHelper extends HelperBase {
         $(byName("company")).val(contactData.company());
         $(byName("address")).click();
         $(byName("address")).val(contactData.address());
-        $(byName("theform")).click();
         $(byName("home")).click();
         $(byName("home")).val(contactData.home());
         $(byName("mobile")).click();
