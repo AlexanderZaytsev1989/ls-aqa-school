@@ -1,19 +1,52 @@
 package ru.ls.qa.school.addressbook.pages;
 
 import org.junit.jupiter.api.Test;
+import ru.ls.qa.school.addressbook.appmanager.ApplicationManager;
 import ru.ls.qa.school.addressbook.appmanager.GroupHelper;
 import ru.ls.qa.school.addressbook.appmanager.NavigationHelper;
 import ru.ls.qa.school.addressbook.model.GroupData;
 import ru.ls.qa.school.addressbook.tests.TestBase;
 
-public class GroupModificationTestsPage extends TestBase {
-    @Test
-    public void testGroupModification() {
-        NavigationHelper.goToGroupPage();
-        GroupHelper.selectGroup();
-        GroupHelper.initGroupModification();
-        GroupHelper.fillGroupForm(new GroupData("test1", "test2", "test3"));
-        GroupHelper.submitGroupModification();
-        GroupHelper.returnToGroupPage();
+public class GroupModificationTestsPage extends HeadAbsPages {
+    public GroupModificationTestsPage(ApplicationManager app) {
+
+        super(app);
     }
+
+    public GroupModificationTestsPage goToGroupPage() {
+        app.getNavigationHelper().goToGroupPage();
+
+        return this;
+    }
+
+    public GroupModificationTestsPage selectGroup() {
+        app.getGroupHelper().selectGroup();
+
+        return this;
+    }
+
+    public GroupModificationTestsPage initGroupModification() {
+        app.getGroupHelper().initGroupModification();
+
+        return this;
+    }
+
+    public GroupModificationTestsPage fillGroupForm() {
+        app.getGroupHelper().fillGroupForm(new GroupData("Modi1", "Modi2", "Modi3"));
+
+        return this;
+    }
+
+    public GroupModificationTestsPage submitGroupModification() {
+        app.getGroupHelper().submitGroupModification();
+
+        return this;
+    }
+
+    public GroupModificationTestsPage returnToGroupPage() {
+        app.getGroupHelper().returnToGroupPage();
+
+        return this;
+    }
+
 }

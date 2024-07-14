@@ -10,7 +10,6 @@ public class ApplicationManager {
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
     private SessionHelper sessionHelper;
-
     private ContactHelper contactHelper;
 
     public void init() {

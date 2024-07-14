@@ -11,8 +11,9 @@ import static org.openqa.selenium.bidi.browsingcontext.Locator.css;
 public class ContactHelper extends HelperBase {
 
     public static void initContactCreation() { click(byLinkText("add new")); }
-
-    public static void addNewContact() { click(byXpath("//div[@id=\'content\']/form/input[21]")); }
+    public static void editContact() { click(byXpath("(//img[@alt=\'Edit\'])[2]")); }
+    public static void submitContactForm() { click(byXpath("(//input[@name=\'submit\'])[2]")); }
+    public static void goToHomePage() { click(byLinkText("home page"));}
 
     public static void fillContactForm(ContactData contactData) {
         $(byName("firstname")).click();
@@ -67,3 +68,5 @@ public class ContactHelper extends HelperBase {
         $(byName("notes")).val(contactData.notes());
     }
 }
+
+
