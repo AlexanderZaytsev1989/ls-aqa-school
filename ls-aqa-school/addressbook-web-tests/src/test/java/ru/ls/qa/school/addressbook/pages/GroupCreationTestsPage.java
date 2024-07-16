@@ -27,7 +27,7 @@ public class GroupCreationTestsPage extends HeadAbsPages{
     }
 
     public GroupCreationTestsPage fillGroupForm() {
-        app.getGroupHelper().fillGroupForm(new GroupData("test 2", "test2", "test2"));
+        app.getGroupHelper().fillGroupForm(new GroupData("test1", "test1", "test1"));
 
         return this;
     }
@@ -54,12 +54,4 @@ public class GroupCreationTestsPage extends HeadAbsPages{
 
         return this;
     }
-
-    public GroupCreationTestsPage logout() {
-        app.getSessionHelper().logout();
-
-        return this;
-    }
-
-
 }

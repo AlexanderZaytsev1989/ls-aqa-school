@@ -4,7 +4,7 @@ import static com.codeborne.selenide.Selenide.page;
 
 public class PageManager {
 
-    private ContactCreationPage contactCreationPage;
+    private ContactCreationTestsPage contactCreationPage;
     private GroupCreationTestsPage groupCreationTestsPage;
     private GroupDelitionTestsPage groupDelitionTestsPage;
     private GroupModificationTestsPage groupModificationTestsPage;

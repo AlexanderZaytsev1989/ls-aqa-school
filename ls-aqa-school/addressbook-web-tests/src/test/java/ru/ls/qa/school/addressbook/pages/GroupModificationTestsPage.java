@@ -32,7 +32,7 @@ public class GroupModificationTestsPage extends HeadAbsPages {
     }
 
     public GroupModificationTestsPage fillGroupForm() {
-        app.getGroupHelper().fillGroupForm(new GroupData("Modi1", "Modi2", "Modi3"));
+        app.getGroupHelper().fillGroupForm(new GroupData("test1", "test1", "test1"));
 
         return this;
     }

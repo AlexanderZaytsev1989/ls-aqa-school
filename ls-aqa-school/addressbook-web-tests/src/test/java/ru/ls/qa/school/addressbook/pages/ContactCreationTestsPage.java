@@ -1,35 +1,26 @@
 package ru.ls.qa.school.addressbook.pages;
 
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
-import org.openqa.selenium.Dimension;
 import ru.ls.qa.school.addressbook.appmanager.ApplicationManager;
-import ru.ls.qa.school.addressbook.appmanager.HelperBase;
-import ru.ls.qa.school.addressbook.appmanager.SessionHelper;
-import ru.ls.qa.school.addressbook.model.ContactData;
-import ru.ls.qa.school.addressbook.pages.Components.CalendarComponent;
+import ru.ls.qa.school.addressbook.model.ContactCreationData;
 
-import static com.codeborne.selenide.Selectors.byLinkText;
-import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class ContactCreationPage extends HeadAbsPages {
+public class ContactCreationTestsPage extends HeadAbsPages {
 
-    public ContactCreationPage(ApplicationManager app) {
+    public ContactCreationTestsPage(ApplicationManager app) {
 
         super(app);
     }
 
-    public ContactCreationPage initContactCreation() {
+    public ContactCreationTestsPage initContactCreation() {
         app.getContactHelper().initContactCreation();
 
         return this;
     }
 
-    public ContactCreationPage fillContactForm() {
-        app.getContactHelper().fillContactForm(new ContactData(
+    public ContactCreationTestsPage fillContactForm() {
+        app.getContactHelper().fillContactForm(new ContactCreationData(
                 "Alex",
                 "Zaytsev",
                 "Sergeevich",
@@ -59,13 +50,13 @@ public class ContactCreationPage extends HeadAbsPages {
         return this;
     }
 
-    public ContactCreationPage submitContactForm() {
+    public ContactCreationTestsPage submitContactForm() {
         app.getContactHelper().submitContactForm();
 
         return this;
     }
 
-    public ContactCreationPage goToHomePage() {
+    public ContactCreationTestsPage goToHomePage() {
         app.getContactHelper().goToHomePage();
 
         return this;
