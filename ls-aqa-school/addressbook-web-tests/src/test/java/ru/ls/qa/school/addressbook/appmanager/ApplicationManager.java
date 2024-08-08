@@ -7,23 +7,37 @@ import org.openqa.selenium.Dimension;
 import static com.codeborne.selenide.Selenide.open;
 
 public class ApplicationManager {
+    private final String browser;
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
     private SessionHelper sessionHelper;
     private ContactHelper contactHelper;
 
+    public ApplicationManager(String browser) {
+        this.browser = browser;
+    }
+
     public void init() {
-        Configuration.browser = "chrome";
-        open("http://localhost/addressbook/");
-        WebDriverRunner.getWebDriver().manage().window().setSize(new Dimension(1936, 1056));
-        SessionHelper.login("admin", "secret");
+        if (browser == "firefox") {
+            open("http://localhost/addressbook/");
+            WebDriverRunner.getWebDriver().manage().window().setSize(new Dimension(1936, 1056));
+            SessionHelper.login("admin", "secret");
+        }
+        else if (browser == "chrome") {
+            open("http://localhost/addressbook/");
+            WebDriverRunner.getWebDriver().manage().window().setSize(new Dimension(1936, 1056));
+            SessionHelper.login("admin", "secret");
+        }
+        else if (browser == "ie") {
+            open("http://localhost/addressbook/");
+            WebDriverRunner.getWebDriver().manage().window().setSize(new Dimension(1936, 1056));
+            SessionHelper.login("admin", "secret");
+        }
     }
 
     public GroupHelper getGroupHelper() { return groupHelper; }
 
-    public NavigationHelper getNavigationHelper() {
-        return navigationHelper;
-    }
+    public NavigationHelper getNavigationHelper() { return navigationHelper; }
 
     public SessionHelper getSessionHelper() { return sessionHelper; }
 

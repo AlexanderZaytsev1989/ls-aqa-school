@@ -1,5 +1,6 @@
 package ru.ls.qa.school.addressbook.tests;
 
+import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import ru.ls.qa.school.addressbook.appmanager.ApplicationManager;
@@ -7,7 +8,7 @@ import ru.ls.qa.school.addressbook.pages.*;
 
 public class TestBase {
 
-    protected static final ApplicationManager app = new ApplicationManager();
+    protected static final ApplicationManager app = new ApplicationManager(Configuration.browser = "firefox");
 
     GroupCreationTestsPage groupCreationTestsPage = new GroupCreationTestsPage(app);
 

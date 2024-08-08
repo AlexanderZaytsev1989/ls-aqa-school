@@ -1,7 +1,6 @@
 package ru.ls.qa.school.addressbook.pages;
 
 import ru.ls.qa.school.addressbook.appmanager.ApplicationManager;
-import ru.ls.qa.school.addressbook.model.ContactCreationData;
 import ru.ls.qa.school.addressbook.model.ContactModificationData;
 
 public class ContactModificationTestsPage extends HeadAbsPages {

@@ -6,7 +6,8 @@ public abstract class HeadAbsPages {
 
     public ApplicationManager app;
 
-    public HeadAbsPages (ApplicationManager app) {
+
+    public HeadAbsPages(ApplicationManager app) {
         this.app = app;
     }
 }
