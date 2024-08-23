@@ -2,20 +2,17 @@ package ru.ls.qa.school.addressbook.pages;
 
 import ru.ls.qa.school.addressbook.appmanager.ApplicationManager;
 
-public class ContactDelitionTestsPage extends HeadAbsPages {
+import static ru.ls.qa.school.addressbook.tests.TestBase.app;
 
-    public ContactDelitionTestsPage(ApplicationManager app) {
+public class ContactDelitionPage extends HeadAbsPages {
 
-        super(app);
-    }
-
-    public ContactDelitionTestsPage editContact() {
+    public ContactDelitionPage editContact() {
         app.getContactHelper().editContact();
 
         return this;
     }
 
-    public ContactDelitionTestsPage deleteContact() {
+    public ContactDelitionPage deleteContact() {
         app.getContactHelper().deleteContact();
 
         return this;

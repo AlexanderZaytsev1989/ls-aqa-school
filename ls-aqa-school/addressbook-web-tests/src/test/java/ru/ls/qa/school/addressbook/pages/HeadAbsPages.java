@@ -2,12 +2,19 @@ package ru.ls.qa.school.addressbook.pages;
 
 import ru.ls.qa.school.addressbook.appmanager.ApplicationManager;
 
+import static ru.ls.qa.school.addressbook.tests.TestBase.app;
+import static ru.ls.qa.school.addressbook.tests.TestBase.page;
+
 public abstract class HeadAbsPages {
+    public ContactListPage goToHomePage() {
+        app.getContactHelper().goToHomePage();
 
-    public ApplicationManager app;
+        return page.contactListPage;
+    }
 
+    public GroupListPage goToGroupPage() {
+        app.getNavigationHelper().goToGroupPage();
 
-    public HeadAbsPages(ApplicationManager app) {
-        this.app = app;
+        return page.groupListPage;
     }
 }

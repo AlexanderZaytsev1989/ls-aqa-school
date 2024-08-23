@@ -1,35 +1,28 @@
 package ru.ls.qa.school.addressbook.tests;
 
 import com.codeborne.selenide.Configuration;
+import dev.pivozavr.jnotunit.core.GlobalBeforeAndAfterCallBack;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.extension.ExtendWith;
 import ru.ls.qa.school.addressbook.appmanager.ApplicationManager;
 import ru.ls.qa.school.addressbook.pages.*;
+@ExtendWith(TestBase.class)
+public class TestBase implements GlobalBeforeAndAfterCallBack {
 
-public class TestBase {
+    public static final ApplicationManager app = new ApplicationManager("firefox");
 
-    protected static final ApplicationManager app = new ApplicationManager(Configuration.browser = "firefox");
+    public static PageManager page;
 
-    GroupCreationTestsPage groupCreationTestsPage = new GroupCreationTestsPage(app);
 
-    GroupModificationTestsPage groupModificationTestsPage = new GroupModificationTestsPage(app);
-
-    ContactCreationTestsPage contactCreationPage = new ContactCreationTestsPage(app);
-
-    ContactModificationTestsPage сontactModificationPage = new ContactModificationTestsPage(app);
-
-    ContactDelitionTestsPage contactDelitionTestsPage = new ContactDelitionTestsPage(app);
-
-    GroupDelitionTestsPage groupDelitionTestsPage = new GroupDelitionTestsPage(app);
-
-    @BeforeAll
-    public static void setUp() { app.init(); }
-
-    @AfterAll
-    public static void tearDown() {
+    @Override
+    public void beforeAllTests() {
+         app.init();
+         page = new PageManager();
     }
 
-    public ApplicationManager getApp() {
-        return app;
+    @Override
+    public void afterAllTests() {
+
     }
 }

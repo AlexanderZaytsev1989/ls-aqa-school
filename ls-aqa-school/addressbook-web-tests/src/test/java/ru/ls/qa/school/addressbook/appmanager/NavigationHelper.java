@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class NavigationHelper extends HelperBase {
 
-    public static void goToGroupPage() {
+    public void goToGroupPage() {
         click(byLinkText("groups"));
     }
 

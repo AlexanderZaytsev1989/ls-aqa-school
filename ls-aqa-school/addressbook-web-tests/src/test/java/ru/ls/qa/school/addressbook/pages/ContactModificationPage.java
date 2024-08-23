@@ -1,16 +1,12 @@
 package ru.ls.qa.school.addressbook.pages;
 
-import ru.ls.qa.school.addressbook.appmanager.ApplicationManager;
 import ru.ls.qa.school.addressbook.model.ContactModificationData;
 
-public class ContactModificationTestsPage extends HeadAbsPages {
+import static ru.ls.qa.school.addressbook.tests.TestBase.app;
 
-    public ContactModificationTestsPage(ApplicationManager app) {
+public class ContactModificationPage extends HeadAbsPages {
 
-        super(app);
-    }
-
-    public ContactModificationTestsPage fillModificationContactForm() {
+    public ContactModificationPage fillModificationContactForm() {
         app.getContactHelper().fillModificationContactForm(new ContactModificationData(
                 "2",
                 "January",
@@ -40,19 +36,19 @@ public class ContactModificationTestsPage extends HeadAbsPages {
         return this;
     }
 
-    public ContactModificationTestsPage submitModificationContactForm() {
+    public ContactModificationPage submitModificationContactForm() {
         app.getContactHelper().submitModificationContactForm();
 
         return this;
     }
 
-    public ContactModificationTestsPage goToHomePage() {
+    public ContactModificationPage goToHomePage() {
         app.getContactHelper().goToHomePage();
 
         return this;
     }
 
-    public ContactModificationTestsPage editContact() {
+    public ContactModificationPage editContact() {
         app.getContactHelper().editContact();
 
         return this;

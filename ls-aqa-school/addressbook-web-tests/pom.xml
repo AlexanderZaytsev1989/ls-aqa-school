@@ -14,6 +14,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -28,6 +35,13 @@
             <version>7.3.1</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.github.13nadcatiy</groupId>
+            <artifactId>jNotUnit-core</artifactId>
+            <version>release-1.05</version>
+        </dependency>
+
     </dependencies>
 
 </project>
