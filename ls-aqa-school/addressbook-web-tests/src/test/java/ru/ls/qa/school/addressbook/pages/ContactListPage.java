@@ -11,5 +11,10 @@ public class ContactListPage extends HeadAbsPages {
         return page.contactCreationPage;
 
     }
+    public ContactModificationPage editContact() {
+        app.getContactHelper().editContact();
+
+        return page.сontactModificationPage;
+    }
 
 }

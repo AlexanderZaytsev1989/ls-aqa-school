@@ -8,7 +8,7 @@ public class GroupCreationTests extends TestBase {
   public void testGroupCreation() {
 
 
-    page.mainPage()
+    page.groupPage()
             .goToGroupPage()
             .initGroupCreation()
             .fillGroupForm(new GroupData(
@@ -16,12 +16,5 @@ public class GroupCreationTests extends TestBase {
             "test2",
             "test3"))
             .submitGroupForm();
-//    groupCreationTestsPage
-//            .goToGroupPage()
-//            .initGroupCreation()
-//            .fillGroupForm()
-//            .submitGroupForm()
-//            .returnToGroupPage();
   }
-
 }

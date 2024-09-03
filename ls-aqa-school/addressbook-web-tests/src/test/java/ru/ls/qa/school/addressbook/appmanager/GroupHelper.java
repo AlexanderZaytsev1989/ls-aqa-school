@@ -18,17 +18,17 @@ public class GroupHelper extends HelperBase {
         type(byName("group_footer"), groupData.footer());
     }
 
-    public void initGroupCreation() {
+    public static void initGroupCreation() {
         click(byName("new"));
     }
 
-    public void initGroupModification() { click(byName("edit")); }
+    public static void initGroupModification() { click(byName("edit")); }
 
-    public void deleteSelectedGroups() {
+    public static void deleteSelectedGroups() {
         click(byName("delete"));
     }
 
-    public void selectGroup() {
+    public static void selectGroup() {
         click(byName("selected[]"));
     }
 

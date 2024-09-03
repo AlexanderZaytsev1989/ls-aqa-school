@@ -5,12 +5,12 @@ import static ru.ls.qa.school.addressbook.tests.TestBase.page;
 
 public class GroupListPage extends HeadAbsPages {
 
-    public GroupCreationPage initGroupCreation() {
-        app.getGroupHelper().initGroupCreation();
+//    public ContactListPage goToHomePage() {
+//        app.getContactHelper().goToHomePage();
+//
+//        return page.contactListPage;
+//    }
 
-        return page.groupCreationPage;
-
-    }
 
     public GroupListPage selectGroup() {
         app.getGroupHelper().selectGroup();
@@ -27,5 +27,11 @@ public class GroupListPage extends HeadAbsPages {
         app.group().initGroupModification();
 
         return page.groupModificationPage;
+    }
+
+    public GroupCreationPage initGroupCreation() {
+        app.getGroupHelper().initGroupCreation();
+
+        return page.groupCreationPage;
     }
 }

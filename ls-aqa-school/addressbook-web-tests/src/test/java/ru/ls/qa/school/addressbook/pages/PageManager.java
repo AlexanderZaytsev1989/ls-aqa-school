@@ -10,10 +10,6 @@ public class PageManager {
 
     public ContactModificationPage сontactModificationPage = new ContactModificationPage();
 
-    public ContactDelitionPage contactDelitionPage = new ContactDelitionPage();
-
-    public GroupDelitionPage groupDelitionPage = new GroupDelitionPage();
-
     public ContactListPage contactListPage = new ContactListPage();
 
     public GroupListPage groupListPage = new GroupListPage();
