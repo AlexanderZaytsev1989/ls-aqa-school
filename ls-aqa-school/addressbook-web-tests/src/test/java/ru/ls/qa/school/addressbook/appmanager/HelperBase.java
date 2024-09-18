@@ -11,6 +11,11 @@ public class HelperBase {
     protected static void click(By locator) { $(locator).click(); }
 
     protected static void type(By locator, String text) {
-        $(locator).val(text);
+        if (text != null){
+            String existingText = $(locator).val(text).getAttribute("value");
+            if (! text.equals(existingText)){
+                $(locator).val(text);
+            }
+        }
     }
 }
