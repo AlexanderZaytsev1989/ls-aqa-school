@@ -7,10 +7,10 @@ import org.openqa.selenium.Dimension;
 import static com.codeborne.selenide.Selenide.open;
 
 public class ApplicationManager {
-    private NavigationHelper navigationHelper;
-    private GroupHelper groupHelper;
-    private SessionHelper sessionHelper;
-    private ContactHelper contactHelper;
+    private NavigationHelper navigationHelper = new NavigationHelper();
+    private GroupHelper groupHelper = new GroupHelper();
+    private SessionHelper sessionHelper = new SessionHelper();
+    private ContactHelper contactHelper = new ContactHelper();
 
     public ApplicationManager(String browser) {
         Configuration.browser = browser;

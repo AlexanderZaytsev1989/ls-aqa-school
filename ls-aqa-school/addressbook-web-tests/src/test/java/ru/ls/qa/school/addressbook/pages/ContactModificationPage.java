@@ -8,7 +8,7 @@ import static ru.ls.qa.school.addressbook.tests.TestBase.app;
 public class ContactModificationPage extends HeadAbsPages {
 
     public ContactModificationPage fillContactForm(ContactCreationData contactCreationData) {
-        app.getContactHelper().fillContactForm(contactCreationData);
+        app.getContactHelper().fillModificationContactForm(contactCreationData);
 
         return this;
         }
