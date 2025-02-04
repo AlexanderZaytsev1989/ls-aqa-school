@@ -1,13 +1,14 @@
 package ru.ls.qa.school.addressbook.pages;
 
+import ru.ls.qa.school.addressbook.model.ContactCreationData;
 import ru.ls.qa.school.addressbook.model.ContactModificationData;
 
 import static ru.ls.qa.school.addressbook.tests.TestBase.app;
 
 public class ContactModificationPage extends HeadAbsPages {
 
-    public ContactModificationPage fillModificationContactForm(ContactModificationData contactModificationData) {
-        app.getContactHelper().fillModificationContactForm(contactModificationData);
+    public ContactModificationPage fillContactForm(ContactCreationData contactCreationData) {
+        app.getContactHelper().fillContactForm(contactCreationData);
 
         return this;
         }
@@ -17,12 +18,6 @@ public class ContactModificationPage extends HeadAbsPages {
 
         return this;
     }
-
-//    public ContactModificationPage goToHomePage() {
-//        app.getContactHelper().goToHomePage();
-//
-//        return this;
-//    }
 
     public ContactModificationPage editContact() {
         app.getContactHelper().editContact();

@@ -17,7 +17,6 @@ public class ApplicationManager {
     }
 
     public void init() {
-
             open("http://localhost/addressbook/");
             WebDriverRunner.getWebDriver().manage().window().setSize(new Dimension(1936, 1056));
             SessionHelper.login("admin", "secret");
