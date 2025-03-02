@@ -8,10 +8,57 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static org.junit.jupiter.api.Assertions.*;
 import org.openqa.selenium.Dimension;
+import ru.ls.qa.school.addressbook.model.ContactCreationData;
+import ru.ls.qa.school.addressbook.model.GroupData;
 import ru.ls.qa.school.addressbook.tests.TestBase;
 
 import java.util.*;
 public class ContactDelitionTests extends TestBase {
+
+  @BeforeEach
+  public void precondition1() {
+    page.groupPage()
+            .goToGroupPage();
+    if(! app.getGroupHelper().isThereAGroup()){
+      app.getGroupHelper().createGroup(new GroupData(
+              "test1",
+              null,
+              null));
+    }
+  }
+  @BeforeEach
+  public void precondition2() {
+    page.mainPage()
+            .initContactCreation();
+    if(! app.getContactHelper().isThereAContact()){
+      app.getContactHelper().createContact(new ContactCreationData(
+              "Alex",
+              "Zaytsev",
+              "Sergeevich",
+              "Zayats",
+              "АУУ",
+              "икуиук",
+              "Лига ставок",
+              "Лесная 3",
+              "АДрес смотри",
+              "5453425",
+              "26543543",
+              "46345",
+              "htrg@bghb.ru",
+              "brb@brevb.ru",
+              "bregvb@brevb.ru",
+              "12",
+              "March",
+              "1999",
+              "12",
+              "March",
+              "1999",
+              "test1",
+              "Витебский",
+              "83244375",
+              "62534"));
+    }
+  }
 
   @Test
   void testContactDelition() {

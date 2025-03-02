@@ -55,6 +55,16 @@ public class ContactHelper extends HelperBase {
         $(byName("notes")).val(contactCreationData.notes());
     }
 
+    public void createContact(ContactCreationData contact) {
+        initContactCreation();
+        fillCreationContactForm(contact);
+        submitContactForm();
+    }
+
+    public boolean isThereAContact() {
+        return isElementPresent(byName("selected[]"));
+    }
+
 }
 
 
