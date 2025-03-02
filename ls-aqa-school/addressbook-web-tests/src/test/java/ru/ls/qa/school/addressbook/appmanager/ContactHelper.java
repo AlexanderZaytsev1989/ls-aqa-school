@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.WebElementCondition;
 import org.openqa.selenium.support.ui.Select;
 import ru.ls.qa.school.addressbook.model.ContactCreationData;
+import ru.ls.qa.school.addressbook.model.GroupData;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
@@ -53,6 +54,7 @@ public class ContactHelper extends HelperBase {
         $(byName("phone2")).val(contactCreationData.phone2());
         $(byName("notes")).val(contactCreationData.notes());
     }
+
 }
 
 

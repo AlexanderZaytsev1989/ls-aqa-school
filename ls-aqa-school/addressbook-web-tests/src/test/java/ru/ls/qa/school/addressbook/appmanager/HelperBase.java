@@ -25,13 +25,10 @@ public class HelperBase {
     }
 
     protected static boolean isElementPresent (By locator) {
-        try {
-            $(locator).shouldBe(visible);
+        if($(locator).isDisplayed()) {
             return true;
         }
-        catch (NoSuchElementException ex) {
-            return false;
-        }
+        else return false;
     }
 
     public boolean isAlertPresent () {

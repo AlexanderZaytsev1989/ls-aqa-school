@@ -32,5 +32,15 @@ public class GroupHelper extends HelperBase {
         click(byName("selected[]"));
     }
 
-    public static void submitGroupModification() { click(byName("update")); }
+    public static void submitGroupModification() { click(byName("update"));}
+
+    public void createGroup(GroupData group) {
+                initGroupCreation();
+                fillGroupForm(group);
+                submitGroupForm();
+    }
+
+    public boolean isThereAGroup() {
+        return isElementPresent(byName("selected[]"));
+    }
 }
