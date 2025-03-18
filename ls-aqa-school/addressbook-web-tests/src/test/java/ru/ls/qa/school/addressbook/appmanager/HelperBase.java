@@ -17,15 +17,16 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class HelperBase {
 
-    protected static void click(By locator) { $(locator).click(); }
+    protected static void click(SelenideElement element) { element.click(); }
 
-    protected static void type(By locator, String text) {
-            $(locator).val(text);
+
+    protected static void type(SelenideElement element, String text) {
+            element.val(text);
 
     }
 
-    protected static boolean isElementPresent (By locator) {
-        if($(locator).isDisplayed()) {
+    protected static boolean isElementPresent (SelenideElement element) {
+        if(element.isDisplayed()) {
             return true;
         }
         else return false;

@@ -1,6 +1,8 @@
 package ru.ls.qa.school.addressbook.appmanager;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebElementCondition;
 import org.openqa.selenium.support.ui.Select;
 import ru.ls.qa.school.addressbook.model.ContactCreationData;
@@ -14,18 +16,34 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class ContactHelper extends HelperBase {
 
-    public static void initContactCreation() { click(byLinkText("add new")); }
-    public static void editContact() { click(byXpath("(//img[@alt=\'Edit\'])[2]")); }
-    public static void submitContactForm() { click(byXpath("(//input[@name=\'submit\'])[2]")); }
-    public static void submitModificationContactForm() { click(byXpath("(//input[@name=\'update\'])[2]")); }
-    public static void goToHomePage() { click(byLinkText("home page"));}
-    public static void deleteContact() { click(byXpath("(//input[@name=\'update\'])[3]"));}
+    SelenideElement newContactBtn = $(byLinkText("add new"));
+    SelenideElement editContactBtn = $(byXpath("(//img[@alt='Edit'])[2]"));
+    SelenideElement submitContactBtn = $(byXpath("(//input[@name='submit'])[2]"));
+    SelenideElement submitModificationContactBtn = $(byXpath("(//input[@name='update'])[2]"));
+    SelenideElement honePageBtn = $(byLinkText("home page"));
+    SelenideElement deleteContactBtn = $(byXpath("(//input[@name='update'])[3]"));
+    SelenideElement selectContactFlag = $(byName("selected[]"));
+
+    ElementsCollection listContactCount = $$("[name*=selected]");
+
+
+
+
+
+
+
+    public void initContactCreation() { click(newContactBtn); }
+    public void editContact() { click(editContactBtn); }
+    public void submitContactForm() { click(submitContactBtn); }
+    public void submitModificationContactForm() { click(submitModificationContactBtn); }
+    public void goToHomePage() { click(honePageBtn);}
+    public void deleteContact() { click(deleteContactBtn);}
 
 
 
     public void fillCreationContactForm(ContactCreationData contactCreationData) {
         fillModificationContactForm(contactCreationData);
-        $(byName("new_group")).shouldBe(visible).selectOption(contactCreationData.new_group());
+        $(newContactBtn).shouldBe(visible).selectOption(contactCreationData.new_group());
 
     }
     public void fillModificationContactForm(ContactCreationData contactCreationData) {
@@ -62,7 +80,11 @@ public class ContactHelper extends HelperBase {
     }
 
     public boolean isThereAContact() {
-        return isElementPresent(byName("selected[]"));
+        return isElementPresent(selectContactFlag);
+    }
+
+    public int getContactCount() {
+        return listContactCount.size();
     }
 
 }

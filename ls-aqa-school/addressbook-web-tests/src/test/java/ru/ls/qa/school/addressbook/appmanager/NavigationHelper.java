@@ -1,6 +1,7 @@
 package ru.ls.qa.school.addressbook.appmanager;
 
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
 import java.util.Map;
@@ -10,21 +11,30 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class NavigationHelper extends HelperBase {
 
-    public static void goToGroupPage(){
+    SelenideElement headingGroups = $(By.tagName("h1"));
+    SelenideElement newGroupBtn = $(byName("new"));
+    SelenideElement gruopPageBtn = $(byLinkText("groups"));
+    SelenideElement mainId = $(byId("maintable"));
+    SelenideElement homePageBtn = $(byLinkText("home"));
 
-        if(isElementPresent(By.tagName("h1")) && $(By.tagName("h1")).getText().equals("Groups")
-                && isElementPresent(byName("new"))) {
+
+
+
+    public void goToGroupPage(){
+
+        if(isElementPresent(headingGroups) && $(headingGroups).getText().equals("Groups")
+                && isElementPresent(newGroupBtn)) {
             return;
         }
-        click(byLinkText("groups"));
+        click(gruopPageBtn);
     }
 
-    public static void goToHomePage() {
+    public void goToHomePage() {
 
-        if(isElementPresent(byId("maintable"))) {
+        if(isElementPresent(mainId)) {
             return;
         }
-        click(byLinkText("home"));
+        click(homePageBtn);
     }
 
 }
