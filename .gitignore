@@ -1,7 +1,4 @@
-/addressbook-web-tests/target/
-/ls-java-core/target/
-/ls-aqa-school/addressbook-web-tests/build/
-
-/addressbook-web-tests/build
-/ls-java-core/build
-/ls-aqa-school/addressbook-web-tests/target/
+/**/target/
+/**/build
+/*.impl
+/.idea
