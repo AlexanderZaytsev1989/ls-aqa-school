@@ -36,27 +36,7 @@ public class ContactDelitionTests extends TestBase {
               "Zaytsev",
               "Sergeevich",
               "Zayats",
-              "АУУ",
-              "икуиук",
-              "Лига ставок",
-              "Лесная 3",
-              "АДрес смотри",
-              "5453425",
-              "26543543",
-              "46345",
-              "htrg@bghb.ru",
-              "brb@brevb.ru",
-              "bregvb@brevb.ru",
-              "12",
-              "March",
-              "1999",
-              "12",
-              "March",
-              "1999",
-              "test1",
-              "Витебский",
-              "83244375",
-              "62534"));
+              "АУУ"));
     }
   }
 

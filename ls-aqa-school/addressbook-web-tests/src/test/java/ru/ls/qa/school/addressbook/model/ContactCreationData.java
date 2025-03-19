@@ -1,8 +1,54 @@
 package ru.ls.qa.school.addressbook.model;
 
-public record ContactCreationData(String firstname, String middlename, String lastname, String nickname, String title,
-                                  String company, String address, String home, String mobile, String work, String fax,
-                                  String email, String email2, String email3, String homepage, String bday, String bmonth,
-                                  String byear, String aday, String amonth, String ayear, String new_group, String address2,
-                                  String phone2, String notes) {
+public class ContactCreationData {
+
+    String firstname;
+    String middleName;
+    String lastname;
+    String nickname;
+    String title;
+
+    public ContactCreationData(String firstname, String middleName, String lastname, String nickname, String title) {
+
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }

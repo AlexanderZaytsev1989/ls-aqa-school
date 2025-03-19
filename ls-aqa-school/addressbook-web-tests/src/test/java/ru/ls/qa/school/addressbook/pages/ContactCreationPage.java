@@ -8,7 +8,7 @@ public class ContactCreationPage extends HeadAbsPages {
 
 
     public ContactCreationPage fillContactForm(ContactCreationData contactCreationData) {
-        app.getContactHelper().fillCreationContactForm(contactCreationData);
+        app.getContactHelper().fillContactForm(contactCreationData);
 
         return this;
     }
