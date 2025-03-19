@@ -3,3 +3,9 @@
 
 /addressbook-web-tests/build
 /ls-java-core/build
+
+/addressbook-web-tests/*.iml
+/ls-java-core/*.iml
+
+/.idea
+/*.iml
