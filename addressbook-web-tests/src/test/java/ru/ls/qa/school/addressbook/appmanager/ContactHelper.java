@@ -2,11 +2,11 @@ package ru.ls.qa.school.addressbook.appmanager;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import ru.ls.qa.school.addressbook.model.ContactCreationData;
+import ru.ls.qa.school.addressbook.model.ContactData;
 
 import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selectors.byName;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 
 public class ContactHelper extends HelperBase {
@@ -22,28 +22,40 @@ public class ContactHelper extends HelperBase {
     ElementsCollection listContactCount = $$("[name*=selected]");
 
 
-
-
-
-
-
-    public void initContactCreation() { click(newContactBtn); }
-    public void editContact() { click(editContactBtn); }
-    public void submitContactForm() { click(submitContactBtn); }
-    public void submitModificationContactForm() { click(submitModificationContactBtn); }
-    public void goToHomePage() { click(honePageBtn);}
-    public void deleteContact() { click(deleteContactBtn);}
-
-
-    public void fillContactForm(ContactCreationData contactCreationData) {
-        $(byName("firstname")).val(contactCreationData.getFirstname());
-        $(byName("middlename")).val(contactCreationData.getMiddleName());
-        $(byName("lastname")).val(contactCreationData.getLastname());
-        $(byName("nickname")).val(contactCreationData.getNickname());
-        $(byName("title")).val(contactCreationData.getTitle());
+    public void initContactCreation() {
+        click(newContactBtn);
     }
 
-    public void createContact(ContactCreationData contact) {
+    public void editContact() {
+        click(editContactBtn);
+    }
+
+    public void submitContactForm() {
+        click(submitContactBtn);
+    }
+
+    public void submitModificationContactForm() {
+        click(submitModificationContactBtn);
+    }
+
+    public void goToHomePage() {
+        click(honePageBtn);
+    }
+
+    public void deleteContact() {
+        click(deleteContactBtn);
+    }
+
+
+    public void fillContactForm(ContactData contactData) {
+        $(byName("firstname")).val(contactData.getFirstname());
+        $(byName("middlename")).val(contactData.getMiddleName());
+        $(byName("lastname")).val(contactData.getLastname());
+        $(byName("nickname")).val(contactData.getNickname());
+        $(byName("title")).val(contactData.getTitle());
+    }
+
+    public void createContact(ContactData contact) {
         initContactCreation();
         fillContactForm(contact);
         submitContactForm();

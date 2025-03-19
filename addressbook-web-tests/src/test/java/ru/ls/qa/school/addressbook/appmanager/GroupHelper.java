@@ -1,20 +1,12 @@
 package ru.ls.qa.school.addressbook.appmanager;
 
 import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.SelenideTargetLocator;
 import ru.ls.qa.school.addressbook.model.GroupData;
 
-import javax.lang.model.util.Elements;
-import java.util.List;
-import java.util.Map;
-
-import static com.codeborne.selenide.Selectors.byLinkText;
 import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
-import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class GroupHelper extends HelperBase {
 
@@ -28,10 +20,6 @@ public class GroupHelper extends HelperBase {
     SelenideElement groupName = $(byName("group_name"));
     SelenideElement groupHeader = $(byName("group_header"));
     SelenideElement groupFooter = $(byName("group_footer"));
-
-
-
-
 
 
     public void submitGroupForm() {
@@ -48,7 +36,9 @@ public class GroupHelper extends HelperBase {
         click(newGroupBtn);
     }
 
-    public void initGroupModification() { click(editGroupBtn); }
+    public void initGroupModification() {
+        click(editGroupBtn);
+    }
 
     public void deleteSelectedGroups() {
         click(deleteGroupBtn);
@@ -58,12 +48,14 @@ public class GroupHelper extends HelperBase {
         click(selectGroupFlag);
     }
 
-    public void submitGroupModification() { click(modificationGroupBtn);}
+    public void submitGroupModification() {
+        click(modificationGroupBtn);
+    }
 
     public void createGroup(GroupData group) {
-                initGroupCreation();
-                fillGroupForm(group);
-                submitGroupForm();
+        initGroupCreation();
+        fillGroupForm(group);
+        submitGroupForm();
     }
 
     public boolean isThereAGroup() {

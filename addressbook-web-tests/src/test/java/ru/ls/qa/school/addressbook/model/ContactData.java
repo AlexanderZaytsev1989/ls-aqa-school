@@ -1,6 +1,6 @@
 package ru.ls.qa.school.addressbook.model;
 
-public class ContactCreationData {
+public class ContactData {
 
     String firstname;
     String middleName;
@@ -8,7 +8,7 @@ public class ContactCreationData {
     String nickname;
     String title;
 
-    public ContactCreationData(String firstname, String middleName, String lastname, String nickname, String title) {
+    public ContactData(String firstname, String middleName, String lastname, String nickname, String title) {
 
     }
 
@@ -51,4 +51,6 @@ public class ContactCreationData {
     public void setTitle(String title) {
         this.title = title;
     }
+
+
 }

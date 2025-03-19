@@ -13,24 +13,29 @@ public class GroupListPage extends HeadAbsPages {
 
 
     public GroupListPage selectGroup() {
-        app.getGroupHelper().selectGroup();
+        app.getGroupHelper()
+           .selectGroup();
 
         return this;
     }
+
     public GroupListPage delitionGroup() {
-        app.getGroupHelper().deleteSelectedGroups();
+        app.getGroupHelper()
+           .deleteSelectedGroups();
 
         return this;
     }
 
     public GroupModificationPage initGroupModification() {
-        app.group().initGroupModification();
+        app.group()
+           .initGroupModification();
 
         return page.groupModificationPage;
     }
 
     public GroupCreationPage initGroupCreation() {
-        app.getGroupHelper().initGroupCreation();
+        app.getGroupHelper()
+           .initGroupCreation();
 
         return page.groupCreationPage;
     }

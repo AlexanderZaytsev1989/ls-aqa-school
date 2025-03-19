@@ -1,43 +1,33 @@
 package ru.ls.qa.school.addressbook.appmanager;
 
-import com.codeborne.selenide.Driver;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
-import com.codeborne.selenide.ex.ElementShould;
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 
-import java.util.Map;
-
-import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.switchTo;
 
 public class HelperBase {
 
-    protected static void click(SelenideElement element) { element.click(); }
+    protected static void click(SelenideElement element) {
+        element.click();
+    }
 
 
     protected static void type(SelenideElement element, String text) {
-            element.val(text);
+        element.val(text);
 
     }
 
-    protected static boolean isElementPresent (SelenideElement element) {
-        if(element.isDisplayed()) {
+    protected static boolean isElementPresent(SelenideElement element) {
+        if (element.isDisplayed()) {
             return true;
-        }
-        else return false;
+        } else return false;
     }
 
-    public boolean isAlertPresent () {
+    public boolean isAlertPresent() {
         try {
             switchTo().alert();
             return true;
-        }
-        catch (NoAlertPresentException e) {
+        } catch (NoAlertPresentException e) {
             return false;
         }
     }

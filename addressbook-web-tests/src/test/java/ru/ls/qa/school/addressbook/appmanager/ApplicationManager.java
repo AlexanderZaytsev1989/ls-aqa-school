@@ -17,18 +17,31 @@ public class ApplicationManager {
     }
 
     public void init() {
-            open("http://localhost/addressbook/");
-            WebDriverRunner.getWebDriver().manage().window().setSize(new Dimension(1936, 1056));
-            SessionHelper.login("admin", "secret");
+        open("http://localhost/addressbook/");
+        WebDriverRunner.getWebDriver()
+                       .manage()
+                       .window()
+                       .setSize(new Dimension(1936, 1056));
+        SessionHelper.login("admin", "secret");
     }
 
-    public GroupHelper group() { return groupHelper; }
+    public GroupHelper group() {
+        return groupHelper;
+    }
 
-    public NavigationHelper getNavigationHelper() { return navigationHelper; }
+    public NavigationHelper getNavigationHelper() {
+        return navigationHelper;
+    }
 
-    public SessionHelper getSessionHelper() { return sessionHelper; }
+    public SessionHelper getSessionHelper() {
+        return sessionHelper;
+    }
 
-    public ContactHelper getContactHelper() { return contactHelper; }
+    public ContactHelper getContactHelper() {
+        return contactHelper;
+    }
 
-    public GroupHelper getGroupHelper() { return groupHelper; }
+    public GroupHelper getGroupHelper() {
+        return groupHelper;
+    }
 }

@@ -26,16 +26,6 @@ public final class GroupData {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (obj == this) return true;
-        if (obj == null || obj.getClass() != this.getClass()) return false;
-        var that = (GroupData) obj;
-        return Objects.equals(this.name, that.name) &&
-                Objects.equals(this.header, that.header) &&
-                Objects.equals(this.footer, that.footer);
-    }
-
-    @Override
     public int hashCode() {
         return Objects.hash(name, header, footer);
     }

@@ -7,13 +7,15 @@ import static ru.ls.qa.school.addressbook.tests.TestBase.app;
 public class GroupModificationPage extends HeadAbsPages {
 
     public GroupModificationPage fillGroupForm(GroupData groupData) {
-        app.group().fillGroupForm(groupData);
+        app.group()
+           .fillGroupForm(groupData);
 
         return this;
     }
 
     public GroupModificationPage submitGroupModification() {
-        app.group().submitGroupModification();
+        app.group()
+           .submitGroupModification();
 
         return this;
     }

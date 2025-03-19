@@ -1,10 +1,7 @@
 package ru.ls.qa.school.addressbook.appmanager;
 
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-
-import java.util.Map;
 
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
@@ -18,11 +15,10 @@ public class NavigationHelper extends HelperBase {
     SelenideElement homePageBtn = $(byLinkText("home"));
 
 
+    public void goToGroupPage() {
 
-
-    public void goToGroupPage(){
-
-        if(isElementPresent(headingGroups) && $(headingGroups).getText().equals("Groups")
+        if (isElementPresent(headingGroups) && $(headingGroups).getText()
+                                                               .equals("Groups")
                 && isElementPresent(newGroupBtn)) {
             return;
         }
@@ -31,7 +27,7 @@ public class NavigationHelper extends HelperBase {
 
     public void goToHomePage() {
 
-        if(isElementPresent(mainId)) {
+        if (isElementPresent(mainId)) {
             return;
         }
         click(homePageBtn);
