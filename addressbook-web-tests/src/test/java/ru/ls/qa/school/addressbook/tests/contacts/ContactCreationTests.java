@@ -1,5 +1,6 @@
 package ru.ls.qa.school.addressbook.tests.contacts;
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import ru.ls.qa.school.addressbook.model.ContactData;
@@ -24,17 +25,17 @@ public class ContactCreationTests extends TestBase {
             .initContactCreation()
             .fillContactForm(new ContactData(
                     "Alex",
-                    "Zaytsev",
                     "Sergeevich",
+                    "Zaytsev",
                     "Zayats",
                     "АУУ"))
             .submitContactForm()
             .goToHomePage();
-        int after = app.getContactHelper()
-                       .getContactCount();
+            int after = app.getContactHelper()
+                            .getContactCount();
 
         assertThat(after)
-                .as("")
+                .as("Сравниваем количество контактов ДО и ПОСЛЕ создания")
                 .isEqualTo(before + 1);
     }
 }

@@ -2,14 +2,19 @@ package ru.ls.qa.school.addressbook.model;
 
 public class ContactData {
 
-    String firstname;
-    String middleName;
-    String lastname;
-    String nickname;
-    String title;
+    private String firstname;
+    private String middleName;
+    private String lastname;
+    private String nickname;
+    private String title;
 
     public ContactData(String firstname, String middleName, String lastname, String nickname, String title) {
 
+        this.firstname = firstname;
+        this.middleName = middleName;
+        this.lastname = lastname;
+        this.nickname = nickname;
+        this.title = title;
     }
 
     public String getFirstname() {

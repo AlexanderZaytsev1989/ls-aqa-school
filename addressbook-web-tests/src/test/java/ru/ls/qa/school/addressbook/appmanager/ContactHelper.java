@@ -15,7 +15,7 @@ public class ContactHelper extends HelperBase {
     SelenideElement editContactBtn = $(byXpath("(//img[@alt='Edit'])[2]"));
     SelenideElement submitContactBtn = $(byXpath("(//input[@name='submit'])[2]"));
     SelenideElement submitModificationContactBtn = $(byXpath("(//input[@name='update'])[2]"));
-    SelenideElement honePageBtn = $(byLinkText("home page"));
+    SelenideElement honePageBtn = $(byLinkText("home"));
     SelenideElement deleteContactBtn = $(byXpath("(//input[@name='update'])[3]"));
     SelenideElement selectContactFlag = $(byName("selected[]"));
 
